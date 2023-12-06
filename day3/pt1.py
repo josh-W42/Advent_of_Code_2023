@@ -6,6 +6,9 @@ with open("data.txt") as file:
     data = [x.strip() for x in file.readlines()]
 
 
+def test(val: str):
+    return val != '.' and not val.isdigit()
+
 part_nums = []
 for i, row in enumerate(data):
     digit_segment = ''
@@ -39,9 +42,6 @@ for i, row in enumerate(data):
             # DiagBottemLeft would be data[i + 1][j - 1]
             # DiagTopRight would be data[i - 1][j + 1]
             # DiagBottomRight would be data[i + 1][j + 1]
-
-            def test(val: str):
-                return val != '.' and not val.isdigit()
 
             # Ensure we do not trigger out of bounds
             if i - 1 >= 0 and test(data[i - 1][j]):
