@@ -39,7 +39,7 @@ for i, row in enumerate(data):
             # Top would be data[i - 1][j]
             # Bottom would be data[i + 1][j]
             # DiagTopLeft would be data[i - 1][j - 1]
-            # DiagBottemLeft would be data[i + 1][j - 1]
+            # DiagBottomLeft would be data[i + 1][j - 1]
             # DiagTopRight would be data[i - 1][j + 1]
             # DiagBottomRight would be data[i + 1][j + 1]
 
