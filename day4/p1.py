@@ -3,7 +3,7 @@
 # Then take the sum of all the points_for_one_card
 
 data = []
-with open("data.txt") as file:
+with open("./day4/data.txt") as file:
   data = [x.strip() for x in file.readlines()]
 
 answer = 0
@@ -13,8 +13,8 @@ for row in data:
   winning_numbers = winning_numbers.split(" ")
   choices = choices.split(" ")
   
-  winning_numbers = [*filter(lambda x: x, winning_numbers)]
-  choices = [*filter(lambda x: x, choices)]
+  winning_numbers = [x for x in winning_numbers if x]
+  choices = [x for x in choices if x]
   
   correct_choices = [x for x in choices if x in winning_numbers]
   if len(correct_choices) > 0:
