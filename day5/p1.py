@@ -1,5 +1,4 @@
 # Par1
-# Goal find the lowest location number that corresponds to an of the initial seeds.
 
 data = []
 with open("./day5/data.txt") as file:
