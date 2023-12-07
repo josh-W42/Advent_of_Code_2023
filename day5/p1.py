@@ -87,7 +87,7 @@ for seed in starting_seeds:
   destination = 0
   source = int(seed)
 
-  for i, mapping in enumerate(mappings):
+  for mapping in mappings:
     for index, [destination_start, source_start, delta_range] in enumerate(mapping):
       if source >= source_start and source < source_start + delta_range:
         delta = source - source_start
