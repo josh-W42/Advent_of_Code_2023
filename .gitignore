@@ -6,6 +6,8 @@
 
 # Avent of code
 data.txt
+test.txt
+_*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
